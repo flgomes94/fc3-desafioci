@@ -12,8 +12,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16.15.1
-      - run: npm install
-      - run: npm run test --coverage
+      - run: yarn
+      - run: yarn jest --coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
